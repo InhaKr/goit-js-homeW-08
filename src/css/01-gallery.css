@@ -40,3 +40,9 @@
 .gallery__link:hover {
   cursor: zoom-in;
 }
+
+div.sl-wrapper .sl-image .sl-caption {
+  background-color: grey;
+  color: lightblue;
+  text-align: center;
+}
