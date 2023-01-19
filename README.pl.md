@@ -51,7 +51,7 @@ skrypt `build`, zamieniając `your_username` i `your_repo_name` na swoje nazwy i
 wysłać zmiany na GitHub.
 
 ```json
-"homepage": "https://your_username.github.io/your_repo_name/",
+"homepage": "https://InhaKr.github.io/your_repo_name/",
 "scripts": {
   "build": "parcel build src/*.html --public-url /your_repo_name/"
 },
