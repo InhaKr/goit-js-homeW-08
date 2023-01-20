@@ -10,8 +10,12 @@ const play = function (data) {
 
 player.on('timeupdate', throttle(play, 1000));
 
-const currentTime = Number(localStorage.getItem('videoplayer-current-time'));
+// const currentTime = Number(localStorage.getItem('videoplayer-current-time'));
+// player.setCurrentTime(currentTime).then(function (seconds) {
+//   // seconds = the actual time that the player seeked to
+// })
 
-player.setCurrentTime(currentTime).then(function (seconds) {
-  // seconds = the actual time that the player seeked to
-})
+player.on('loaded', () => {
+  currentTime = localStorage.getItem('videoplayer-current-time') || 0;
+  player.setCurrentTime(currentTime);
+});
